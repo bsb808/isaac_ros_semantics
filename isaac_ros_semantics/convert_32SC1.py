@@ -106,7 +106,6 @@ def generate_launch_description():
             0,
             255
         )
-        array = array/10.0*255
 
         encoding = "mono8"
         new_msg = self.bridge.cv2_to_imgmsg(array.astype(np.uint8), encoding)
